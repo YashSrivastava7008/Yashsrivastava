@@ -417,8 +417,7 @@ export default function BhaiyaaCaseStudy() {
                                     { icon: <Smartphone size={24} />, label: 'Open App' },
                                     { icon: <MapPin size={24} />, label: 'Enable Location' },
                                     { icon: <Map size={24} />, label: 'Select Address' },
-                                    { icon: <Home size={24} />, label: 'Home Page' },
-                                    { icon: <Smartphone size={24} />, label: 'Login Popup' },
+                                    { icon: <Phone size={24} />, label: 'Mobile No.' },
                                     { icon: <Lock size={24} />, label: 'OTP Verify' },
                                     { icon: <CheckCircle2 size={24} />, label: 'Full Access' },
                                 ].map((step, i) => (
@@ -432,10 +431,10 @@ export default function BhaiyaaCaseStudy() {
                             </div>
                             <div className={styles.flowIndicators}>
                                 {[
-                                    'Location-first contextual onboarding',
-                                    'Access home screen before compulsory login',
-                                    'High-intent login popup for community transactions',
-                                    'Seamless transition from guest to verified user',
+                                    'Mandatory identity verification before exploration',
+                                    'Higher trust through upfront secure onboarding',
+                                    'Personalized neighborhood discovery from Step 1',
+                                    'One-time authentication for persistent access',
                                 ].map((text, i) => (
                                     <div key={i} className={`${styles.indicatorItem} ${styles.indicatorItemNew}`}>
                                         <CheckCircle2 size={18} color="var(--color-highlight)" style={{ flexShrink: 0 }} />
@@ -546,8 +545,8 @@ export default function BhaiyaaCaseStudy() {
                                     <td>❌</td>
                                 </tr>
                                 <tr>
-                                    <td>Authentication</td>
-                                    <td>✅ Secure Login Required</td>
+                                    <td>Onboarding Model</td>
+                                    <td>✅ Identity-First (Gated)</td>
                                     <td>❌ Login required</td>
                                     <td>❌ Login required</td>
                                     <td>❌ Login required</td>
