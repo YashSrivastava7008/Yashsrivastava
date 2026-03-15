@@ -466,15 +466,17 @@ export default function BhaiyaaCaseStudy() {
                                 <li className={styles.listItem}>Used across splash screens and loading states to keep users engaged.</li>
                             </ul>
                         </div>
-                        <div className={styles.mediaPlaceholder} style={{ margin: 0, borderStyle: 'solid', padding: 0 }}>
-                            <video
-                                src="/images/bhaiyaa/logo_animation.mp4"
-                                autoPlay
-                                loop
-                                muted
-                                playsInline
-                                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                            />
+                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '20px' }}>
+                            <div className={styles.mockupCard} style={{ maxWidth: '240px', margin: '0' }}>
+                                <video
+                                    src="/images/bhaiyaa/logo_animation.mp4"
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    className={styles.mockupImage}
+                                />
+                            </div>
                         </div>
                     </div>
                 </section>
