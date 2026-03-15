@@ -467,14 +467,14 @@ export default function BhaiyaaCaseStudy() {
                             </ul>
                         </div>
                         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '20px' }}>
-                            <div className={styles.mockupCard} style={{ maxWidth: '240px', margin: '0' }}>
+                            <div className={styles.heroMockup} style={{ position: 'relative', margin: '0', width: '320px', height: '320px', backgroundColor: '#ffffff', borderRadius: '40px' }}>
                                 <video
                                     src="/images/bhaiyaa/logo_animation.mp4"
                                     autoPlay
                                     loop
                                     muted
                                     playsInline
-                                    className={styles.mockupImage}
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                                 />
                             </div>
                         </div>
