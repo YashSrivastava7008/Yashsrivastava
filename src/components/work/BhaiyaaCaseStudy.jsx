@@ -415,13 +415,11 @@ export default function BhaiyaaCaseStudy() {
                             <div className={styles.flowTrack}>
                                 {[
                                     { icon: <Smartphone size={24} />, label: 'Open App' },
-                                    { icon: <Phone size={24} />, label: 'Mobile No.' },
-                                    { icon: <Lock size={24} />, label: 'OTP Verify' },
-                                    { icon: <User size={24} />, label: 'Create Profile' },
                                     { icon: <MapPin size={24} />, label: 'Enable Location' },
                                     { icon: <Map size={24} />, label: 'Select Address' },
                                     { icon: <Home size={24} />, label: 'Home Page' },
-                                    { icon: <Search size={24} />, label: 'Explore Services' },
+                                    { icon: <Smartphone size={24} />, label: 'Login Popup' },
+                                    { icon: <Lock size={24} />, label: 'OTP Verify' },
                                     { icon: <CheckCircle2 size={24} />, label: 'Full Access' },
                                 ].map((step, i) => (
                                     <div key={i} className={styles.flowStep}>
@@ -434,10 +432,10 @@ export default function BhaiyaaCaseStudy() {
                             </div>
                             <div className={styles.flowIndicators}>
                                 {[
-                                    'Secure mandatory login for verified community access',
-                                    'Reduced cognitive friction during setup',
-                                    'Immediate trust building through OTP verification',
-                                    'One-time setup for persistent neighborhood access',
+                                    'Location-first contextual onboarding',
+                                    'Access home screen before compulsory login',
+                                    'High-intent login popup for community transactions',
+                                    'Seamless transition from guest to verified user',
                                 ].map((text, i) => (
                                     <div key={i} className={`${styles.indicatorItem} ${styles.indicatorItemNew}`}>
                                         <CheckCircle2 size={18} color="var(--color-highlight)" style={{ flexShrink: 0 }} />
