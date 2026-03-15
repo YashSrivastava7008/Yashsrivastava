@@ -454,8 +454,8 @@ export default function BhaiyaaCaseStudy() {
                         <span className={styles.sectionBadge}>Branding</span>
                         <h2 className={styles.sectionTitle}>Motion & Identity</h2>
                     </div>
-                    <div className={styles.grid2Col}>
-                        <div>
+                    <div className={styles.grid2Col} style={{ alignItems: 'stretch' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                             <h3 className={styles.boxTitle}>Why this Logo Animation?</h3>
                             <p className={styles.sectionText}>
                                 A logo isn't static anymore. We animated the Bhaiyaa logo to convey speed, locality, and friendly service.
@@ -466,7 +466,7 @@ export default function BhaiyaaCaseStudy() {
                                 <li className={styles.listItem}>Used across splash screens and loading states to keep users engaged.</li>
                             </ul>
                         </div>
-                        <div className={styles.mediaPlaceholder} style={{ borderStyle: 'solid', padding: 0 }}>
+                        <div className={styles.mediaPlaceholder} style={{ margin: 0, borderStyle: 'solid', padding: 0 }}>
                             <video
                                 src="/images/bhaiyaa/logo_animation.mp4"
                                 autoPlay
