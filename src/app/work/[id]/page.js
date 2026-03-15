@@ -1,11 +1,11 @@
 import ClientPage from "./ClientPage";
 
+import projects from "../../../data/projects.json";
+
 export async function generateStaticParams() {
-    return [
-        { id: '1' },
-        { id: '2' },
-        { id: '3' }
-    ];
+    return projects.map((project) => ({
+        id: project.id.toString(),
+    }));
 }
 
 export default async function Page({ params }) {
