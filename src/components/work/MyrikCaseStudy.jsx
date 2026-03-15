@@ -78,7 +78,7 @@ export default function MyrikCaseStudy() {
                                 <strong>Myrik</strong> is a pioneering mobility startup focusing on India's underserved non-metro markets. It leverages app-based e-rickshaw ride-hailing to solve chaotic, unorganized transport challenges in small towns.
                             </p>
                             <p className={styles.sectionText}>
-                                With rides starting at just <strong>₹10</strong>, Myrik simultaneously stacks grocery delivery and B2B logistics on the same digital infrastructure—a true "blue ocean" strategy.
+                                With rides starting at just <strong>₹10</strong>, Myrik simultaneously stacks <strong>Bulk Orders</strong> and <strong>Monthly Booking Services</strong> on the same digital infrastructure—a true "blue ocean" strategy.
                             </p>
                         </div>
                         <div className={styles.highlightCard}>
@@ -103,7 +103,7 @@ export default function MyrikCaseStudy() {
                     <div className={styles.contentRow}>
                         <div>
                             <p className={styles.sectionText}>
-                                Founded in <strong>2024</strong> in Mumbai under <em>Arohana Technologies Pvt Ltd</em>, Myrik was born from a stark realization: the digital mobility revolution completely bypassed India's smaller towns.
+                                Founded in <strong>2023</strong> in Mumbai under <em>Arohana Technologies Pvt Ltd</em>, Myrik was born from a stark realization: the digital mobility revolution completely bypassed India's smaller towns.
                             </p>
                             <div className={styles.quoteBlock}>
                                 <p className={styles.quoteText}>"Our mission is to build the digital nervous system for last-mile distribution in Bharat."</p>
@@ -112,7 +112,7 @@ export default function MyrikCaseStudy() {
                         </div>
                         <div className={styles.grid3Col} style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginTop: 0 }}>
                             <div className={styles.statCard} style={{ padding: '20px' }}>
-                                <div className={styles.statValue} style={{ fontSize: '1.8rem' }}>2024</div>
+                                <div className={styles.statValue} style={{ fontSize: '1.8rem' }}>2023</div>
                                 <div className={styles.statLabel}>Founded</div>
                             </div>
                             <div className={styles.statCard} style={{ padding: '20px' }}>
@@ -175,7 +175,7 @@ export default function MyrikCaseStudy() {
                             <div className={styles.ecoNode}>
                                 <div className={styles.ecoNodeIcon}><Package size={28} /></div>
                                 <h4>Local Merchants</h4>
-                                <p>On-demand B2B grocery & parcel delivery logistics</p>
+                                <p>On-demand <strong>Bulk Order</strong> & parcel delivery logistics</p>
                             </div>
                         </div>
                         
@@ -208,37 +208,50 @@ export default function MyrikCaseStudy() {
                     <div className={styles.deliveryMockupGallery}>
                         <div className={styles.deliveryMockupItem}>
                             <div className={styles.deliveryPhone}>
-                                <img src="/images/myrik/screens/onboarding.png" alt="Welcome" />
+                                <img src="/images/myrik/screens/onboarding.png" alt="Step 1: Welcome" />
                             </div>
-                            <div className={styles.deliveryPhoneLabel}>WELCOME</div>
+                            <div className={styles.deliveryPhoneLabel}>01. WELCOME</div>
+                            <p className={styles.flowDesc} style={{ maxWidth: '160px' }}>Clear value prop and regional branding.</p>
                         </div>
+
+                        <div className={styles.flowArrow} style={{ marginTop: '145px' }} />
 
                         <div className={styles.deliveryMockupItem}>
                             <div className={styles.deliveryPhone}>
-                                <img src="/images/myrik/screens/home_map.png" alt="Book" />
+                                <img src="/images/myrik/screens/login.png" alt="Step 2: Access" />
                             </div>
-                            <div className={styles.deliveryPhoneLabel}>BOOK</div>
+                            <div className={styles.deliveryPhoneLabel}>02. ACCESS</div>
+                            <p className={styles.flowDesc} style={{ maxWidth: '160px' }}>Simple phone-based entry with minimal fields.</p>
                         </div>
+
+                        <div className={styles.flowArrow} style={{ marginTop: '145px' }} />
 
                         <div className={styles.deliveryMockupItem}>
                             <div className={styles.deliveryPhone}>
-                                <img src="/images/myrik/screens/searching.png" alt="Match" />
+                                <img src="/images/myrik/screens/verification.png" alt="Step 3: Security" />
                             </div>
-                            <div className={styles.deliveryPhoneLabel}>MATCH</div>
+                            <div className={styles.deliveryPhoneLabel}>03. SECURITY</div>
+                            <p className={styles.flowDesc} style={{ maxWidth: '160px' }}>Fast OTP verification for immediate trust.</p>
                         </div>
+
+                        <div className={styles.flowArrow} style={{ marginTop: '145px' }} />
 
                         <div className={styles.deliveryMockupItem}>
                             <div className={styles.deliveryPhone}>
-                                <img src="/images/myrik/screens/tracking.png" alt="Track" />
+                                <img src="/images/myrik/screens/permissions.png" alt="Step 4: Permissions" />
                             </div>
-                            <div className={styles.deliveryPhoneLabel}>TRACK</div>
+                            <div className={styles.deliveryPhoneLabel}>04. CONTEXT</div>
+                            <p className={styles.flowDesc} style={{ maxWidth: '160px' }}>Transparent explanation for critical access.</p>
                         </div>
+
+                        <div className={styles.flowArrow} style={{ marginTop: '145px' }} />
 
                         <div className={styles.deliveryMockupItem}>
                             <div className={styles.deliveryPhone}>
-                                <img src="/images/myrik/screens/ending.png" alt="History" />
+                                <img src="/images/myrik/screens/home_map.png" alt="Step 5: Let's Go" />
                             </div>
-                            <div className={styles.deliveryPhoneLabel}>HISTORY</div>
+                            <div className={styles.deliveryPhoneLabel}>05. LET'S GO</div>
+                            <p className={styles.flowDesc} style={{ maxWidth: '160px' }}>Immediate view of available rides around you.</p>
                         </div>
                     </div>
                 </section>
@@ -309,8 +322,8 @@ export default function MyrikCaseStudy() {
                         <div className={styles.boxCard} style={{ margin: 0, height: 'auto', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                             <h3 className={styles.boxTitle}>Core Capability</h3>
                             <ul className={styles.list}>
-                                <li className={styles.listItem}><strong>Dispatch Algorithm:</strong> Optimized for pooled rides, matching multiple passengers along similar routes.</li>
-                                <li className={styles.listItem}><strong>Location Tracking:</strong> Engineered for low-bandwidth (2G/3G) environments in rural India.</li>
+                                <li className={styles.listItem}><strong>Dispatch Algorithm:</strong> Optimized for pooled rides and <strong>Bulk fulfillment</strong>, matching multiple payloads along similar routes.</li>
+                                <li className={styles.listItem}><strong>Monthly Booking:</strong> First-of-its-kind subscription engine for daily commuters and recurring logistics.</li>
                                 <li className={styles.listItem}><strong>Incentive Engine:</strong> Gamified logic ensuring supply during peak hours like market openings.</li>
                             </ul>
                         </div>
@@ -346,8 +359,8 @@ export default function MyrikCaseStudy() {
                         </div>
                         <div className={styles.highlightCard}>
                             <span style={{ fontSize: '1.5rem', display: 'block', marginBottom: '12px' }}>📦</span>
-                            <h4 className={styles.cardTitle} style={{fontSize: '1.1rem'}}>Delivery Services</h4>
-                            <p className={styles.sectionText} style={{fontSize: '0.85rem', marginBottom: 0}}>Returning rickshaws utilized for route-optimized grocery & parcel drops.</p>
+                            <h4 className={styles.cardTitle} style={{fontSize: '1.1rem'}}>Bulk & Monthly</h4>
+                            <p className={styles.sectionText} style={{fontSize: '0.85rem', marginBottom: 0}}>High-margin <strong>Bulk Orders</strong> and recurring <strong>Monthly subscriptions</strong> for local enterprises.</p>
                         </div>
                         <div className={styles.highlightCard}>
                             <span style={{ fontSize: '1.5rem', display: 'block', marginBottom: '12px' }}>🏪</span>
@@ -437,9 +450,9 @@ export default function MyrikCaseStudy() {
                         <div>
                             <h3 className={styles.cardTitle}>Target Users</h3>
                             <ul className={styles.swotList}>
-                                <li><strong>Local Merchants</strong> — Grocery stores, pharmacies, clothing shops</li>
-                                <li><strong>Individuals</strong> — Documents, personal items, inter-home transfers</li>
-                                <li><strong>Small Businesses</strong> — Local e-commerce, service providers, wholesalers</li>
+                                <li><strong>Small Businesses</strong> — Wholesale distributors, pharmacies, clothing manufacturers</li>
+                                <li><strong>Institutions</strong> — Schools and offices for recurring group bookings</li>
+                                <li><strong>Individuals</strong> — <strong>Monthly commuters</strong> and high-volume parcel senders</li>
                             </ul>
                         </div>
                     </div>
@@ -511,9 +524,9 @@ export default function MyrikCaseStudy() {
                                 <tr><th>Delivery Type</th><th>Examples</th></tr>
                             </thead>
                             <tbody>
-                                <tr><td>Grocery</td><td>Vegetables, daily essentials</td></tr>
+                                <tr><td>Bulk Orders</td><td>B2B inventory, wholesale distribution</td></tr>
+                                <tr><td>Monthly Passes</td><td>Recurring daily employee/student transport</td></tr>
                                 <tr><td>Retail</td><td>Local clothing & electronics stores</td></tr>
-                                <tr><td>Food</td><td>Restaurant takeaway</td></tr>
                                 <tr><td>Parcel</td><td>Documents, small packages</td></tr>
                                 <tr><td>Pharmacy</td><td>Medicines from local pharmacies</td></tr>
                             </tbody>
@@ -552,9 +565,9 @@ export default function MyrikCaseStudy() {
                         <table className={styles.dataTable}>
                             <thead><tr><th>Time</th><th>Activity</th><th>Impact</th></tr></thead>
                             <tbody>
-                                <tr><td><strong>Morning</strong></td><td>Passenger rides</td><td>High-density pooling during rush</td></tr>
-                                <tr><td><strong>Afternoon</strong></td><td>Merchant deliveries</td><td>B2B fulfillment replaces idle time</td></tr>
-                                <tr><td><strong>Evening</strong></td><td>Parcel & retail</td><td>Delivery surges with home returns</td></tr>
+                                <tr><td><strong>Morning</strong></td><td>Passenger & Monthly Rides</td><td>High-density pooling for regular commuters</td></tr>
+                                <tr><td><strong>Afternoon</strong></td><td>Bulk Order Deliveries</td><td>B2B fulfillment replaces idle time</td></tr>
+                                <tr><td><strong>Evening</strong></td><td>Retail & Parcel</td><td>Delivery surges with home returns</td></tr>
                             </tbody>
                         </table>
                     </div>

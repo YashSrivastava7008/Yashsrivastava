@@ -121,8 +121,8 @@ export default function BhaiyaaCaseStudy() {
                         </div>
                         <div className={styles.iaArrow}><ArrowDown size={24} /></div>
                         <div className={styles.iaRow}>
-                            <div className={`${styles.iaNode} ${styles.iaNodeAccent}`}>🏘️ Community</div>
-                            <div className={`${styles.iaNode} ${styles.iaNodeAccent}`}>💊 Health</div>
+                            <div className={`${styles.iaNode} ${styles.iaNodeAccent}`}>🏘️ Community (Malls/Stores)</div>
+                            <div className={`${styles.iaNode} ${styles.iaNodeAccent}`}>💊 Health (Hospitals)</div>
                             <div className={`${styles.iaNode} ${styles.iaNodeAccent}`}>🛒 Mart</div>
                             <div className={`${styles.iaNode} ${styles.iaNodeAccent}`}>🍕 Food</div>
                             <div className={`${styles.iaNode} ${styles.iaNodeAccent}`}>🎉 Events</div>
@@ -164,10 +164,10 @@ export default function BhaiyaaCaseStudy() {
                                 Connect with your neighbourhood and stay updated with local activities and discussions.
                             </p>
                             <ul className={styles.featureCapList}>
+                                <li className={styles.featureCapItem}>Community Malls & Retail Stores</li>
+                                <li className={styles.featureCapItem}>Neighborhood Hospitals & Clinics</li>
                                 <li className={styles.featureCapItem}>Local groups and discussions</li>
-                                <li className={styles.featureCapItem}>Neighbourhood updates</li>
                                 <li className={styles.featureCapItem}>Community announcements</li>
-                                <li className={styles.featureCapItem}>Social engagement</li>
                             </ul>
                         </div>
 
@@ -250,8 +250,8 @@ export default function BhaiyaaCaseStudy() {
                             <div className={styles.ecosystemPlatform}>Bhaiyaa Platform</div>
                             <div className={styles.ecosystemConnector} />
                             <div className={styles.ecosystemNodes}>
-                                <span className={styles.ecosystemNode}>🏘️ Community</span>
-                                <span className={styles.ecosystemNode}>💊 Health</span>
+                                <span className={styles.ecosystemNode}>🏘️ Community Malls</span>
+                                <span className={styles.ecosystemNode}>💊 Hospitals</span>
                                 <span className={styles.ecosystemNode}>🛒 Mart</span>
                                 <span className={styles.ecosystemNode}>🍕 Food</span>
                                 <span className={styles.ecosystemNode}>🎉 Events</span>
@@ -328,9 +328,9 @@ export default function BhaiyaaCaseStudy() {
                             <div>
                                 <h4 className={styles.boxTitle}>🧠 UX Improvements</h4>
                                 <ul className={styles.list}>
-                                    <li className={styles.listItem}><strong>Reduced Cognitive Overload:</strong> Tabbed navigation (Community, Health, Mart, Food, Events) uses progressive disclosure.</li>
-                                    <li className={styles.listItem}><strong>Mental Model Alignment:</strong> Users first select a service type, then explore stores within that vertical.</li>
-                                    <li className={styles.listItem}><strong>Delightful Edge Cases:</strong> Friendly empty states keep the experience engaging when there's no data.</li>
+                                    <li className={styles.listItem}><strong>Reduced Cognitive Overload:</strong> Tabbed navigation (Community, Health, Mart, Food, Events) categorizes deep inventory for easy access.</li>
+                                    <li className={styles.listItem}><strong>Community Services:</strong> Direct access to local hospitals, community malls, and specialized retail stores.</li>
+                                    <li className={styles.listItem}><strong>Action-First Design:</strong> Mandatory login ensures a secure, personalized environment for neighborhood transactions.</li>
                                 </ul>
                             </div>
                         </div>
@@ -410,19 +410,18 @@ export default function BhaiyaaCaseStudy() {
 
                     {/* New Flow */}
                     <div className={styles.flowSection}>
-                        <h3 className={styles.boxTitle}>New Flow — Progressive Authentication</h3>
+                        <h3 className={styles.boxTitle}>Streamlined Flow — Secure Mandatory Login</h3>
                         <div className={`${styles.flowCard} ${styles.flowCardNew}`}>
                             <div className={styles.flowTrack}>
                                 {[
                                     { icon: <Smartphone size={24} />, label: 'Open App' },
+                                    { icon: <Phone size={24} />, label: 'Mobile No.' },
+                                    { icon: <Lock size={24} />, label: 'OTP Verify' },
+                                    { icon: <User size={24} />, label: 'Create Profile' },
                                     { icon: <MapPin size={24} />, label: 'Enable Location' },
                                     { icon: <Map size={24} />, label: 'Select Address' },
                                     { icon: <Home size={24} />, label: 'Home Page' },
                                     { icon: <Search size={24} />, label: 'Explore Services' },
-                                    { icon: <ShoppingCart size={24} />, label: 'User Action' },
-                                    { icon: <Smartphone size={24} />, label: 'Enter Mobile' },
-                                    { icon: <Lock size={24} />, label: 'OTP Verify' },
-                                    { icon: <User size={24} />, label: 'Create Profile' },
                                     { icon: <CheckCircle2 size={24} />, label: 'Full Access' },
                                 ].map((step, i) => (
                                     <div key={i} className={styles.flowStep}>
@@ -435,10 +434,10 @@ export default function BhaiyaaCaseStudy() {
                             </div>
                             <div className={styles.flowIndicators}>
                                 {[
-                                    'Users explore the app before signing up',
-                                    'Reduced onboarding friction significantly',
-                                    'Progressive authentication on first action',
-                                    'Faster, more intuitive first-time experience',
+                                    'Secure mandatory login for verified community access',
+                                    'Reduced cognitive friction during setup',
+                                    'Immediate trust building through OTP verification',
+                                    'One-time setup for persistent neighborhood access',
                                 ].map((text, i) => (
                                     <div key={i} className={`${styles.indicatorItem} ${styles.indicatorItemNew}`}>
                                         <CheckCircle2 size={18} color="var(--color-highlight)" style={{ flexShrink: 0 }} />
@@ -549,8 +548,8 @@ export default function BhaiyaaCaseStudy() {
                                     <td>❌</td>
                                 </tr>
                                 <tr>
-                                    <td>Progressive Auth</td>
-                                    <td>✅ Explore before signup</td>
+                                    <td>Authentication</td>
+                                    <td>✅ Secure Login Required</td>
                                     <td>❌ Login required</td>
                                     <td>❌ Login required</td>
                                     <td>❌ Login required</td>

@@ -689,12 +689,26 @@
 /* ========== DELIVERY MOCKUP GALLERY ========== */
 .deliveryMockupGallery {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    padding: 60px 0;
-    width: 100%;
-    flex-wrap: nowrap;
+    gap: 24px;
+    overflow-x: auto;
+    padding: 32px 0 24px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(108, 140, 255, 0.3) transparent;
+}
+
+.deliveryMockupGallery::-webkit-scrollbar {
+    height: 6px;
+}
+
+.deliveryMockupGallery::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.deliveryMockupGallery::-webkit-scrollbar-thumb {
+    background: rgba(108, 140, 255, 0.3);
+    border-radius: 3px;
 }
 
 .deliveryMockupItem {
