@@ -59,7 +59,7 @@ export default function MyrikCaseStudy() {
                         <img src="/images/myrik/screens/home.png" alt="Myrik Home Screen" />
                     </div>
                     <div className={`${styles.heroMockup} ${styles.mockupFront}`}>
-                        <img src="/images/myrik/screens/splash.png" alt="Myrik Splash Screen" />
+                        <img src="/images/myrik/screens/splash_new.png" alt="Myrik Splash Screen" />
                     </div>
                 </motion.div>
             </section>
@@ -195,7 +195,55 @@ export default function MyrikCaseStudy() {
                     </div>
                 </section>
 
-                {/* ===== 04. MARKET ANALYSIS ===== */}
+                {/* ===== 04. USER JOURNEY: SEAMLESS ONBOARDING ===== */}
+                <section className={styles.section}>
+                    <div className={styles.sectionHeader}>
+                        <span className={styles.sectionBadge}>User Journey</span>
+                        <h2 className={styles.sectionTitle}>A Seamless Experience from Start to Finish</h2>
+                        <p className={styles.sectionText}>
+                            Designing for Bharat means designing for simplicity. Our 5-step onboarding flow focuses on immediate utility, building trust with every interaction through familiar visuals and minimal friction.
+                        </p>
+                    </div>
+
+                    <div className={styles.deliveryMockupGallery}>
+                        <div className={styles.deliveryMockupItem}>
+                            <div className={styles.deliveryPhone}>
+                                <img src="/images/myrik/screens/onboarding.png" alt="Welcome" />
+                            </div>
+                            <div className={styles.deliveryPhoneLabel}>WELCOME</div>
+                        </div>
+
+                        <div className={styles.deliveryMockupItem}>
+                            <div className={styles.deliveryPhone}>
+                                <img src="/images/myrik/screens/home_map.png" alt="Book" />
+                            </div>
+                            <div className={styles.deliveryPhoneLabel}>BOOK</div>
+                        </div>
+
+                        <div className={styles.deliveryMockupItem}>
+                            <div className={styles.deliveryPhone}>
+                                <img src="/images/myrik/screens/searching.png" alt="Match" />
+                            </div>
+                            <div className={styles.deliveryPhoneLabel}>MATCH</div>
+                        </div>
+
+                        <div className={styles.deliveryMockupItem}>
+                            <div className={styles.deliveryPhone}>
+                                <img src="/images/myrik/screens/tracking.png" alt="Track" />
+                            </div>
+                            <div className={styles.deliveryPhoneLabel}>TRACK</div>
+                        </div>
+
+                        <div className={styles.deliveryMockupItem}>
+                            <div className={styles.deliveryPhone}>
+                                <img src="/images/myrik/screens/ending.png" alt="History" />
+                            </div>
+                            <div className={styles.deliveryPhoneLabel}>HISTORY</div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* ===== 05. MARKET ANALYSIS ===== */}
                 <section className={styles.section}>
                     <div className={styles.sectionHeader}>
                         <span className={styles.sectionBadge}>Market</span>
@@ -257,18 +305,27 @@ export default function MyrikCaseStudy() {
                         </div>
                     </div>
 
-                    <div className={styles.contentRow} style={{ marginTop: '48px' }}>
-                        <ul className={styles.swotList}>
-                            <li><strong>Dispatch Algorithm:</strong> Optimized for pooled rides, matching multiple passengers along similar routes.</li>
-                            <li><strong>Location Tracking:</strong> Engineered for low-bandwidth (2G/3G) environments in rural India.</li>
-                            <li><strong>Incentive Engine:</strong> Gamified logic ensuring supply during peak hours like market openings.</li>
-                        </ul>
-                        <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
-                            <div className={styles.heroMockup} style={{ position: 'relative', transform: 'rotateY(-8deg) scale(0.85)', left: 0, top: 0, animation: 'none', width: '200px', height: '420px' }}>
+                    <div className={styles.flexEqual} style={{ marginTop: '48px' }}>
+                        <div className={styles.boxCard} style={{ margin: 0, height: 'auto', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                            <h3 className={styles.boxTitle}>Core Capability</h3>
+                            <ul className={styles.list}>
+                                <li className={styles.listItem}><strong>Dispatch Algorithm:</strong> Optimized for pooled rides, matching multiple passengers along similar routes.</li>
+                                <li className={styles.listItem}><strong>Location Tracking:</strong> Engineered for low-bandwidth (2G/3G) environments in rural India.</li>
+                                <li className={styles.listItem}><strong>Incentive Engine:</strong> Gamified logic ensuring supply during peak hours like market openings.</li>
+                            </ul>
+                        </div>
+                        <div className={styles.mockupSideBySide} style={{ alignItems: 'center' }}>
+                            <div className={styles.heroMockup} style={{ position: 'relative', width: '150px', height: '320px', transform: 'none', animation: 'none', border: '5px solid #1a1a1a', background: '#0a0a0a', margin: 0 }}>
                                 <img src="/images/myrik/screens/booking.png" alt="Booking Screen" />
+                                <div style={{ position: 'absolute', bottom: '-22px', left: 0, width: '100%', textAlign: 'center', fontSize: '8px', color: 'var(--color-text-muted)' }}>1. BOOKING</div>
                             </div>
-                            <div className={styles.heroMockup} style={{ position: 'relative', transform: 'rotateY(8deg) scale(0.85)', left: 0, top: 0, animation: 'none', width: '200px', height: '420px' }}>
+                            <div className={styles.heroMockup} style={{ position: 'relative', width: '150px', height: '320px', transform: 'none', animation: 'none', border: '5px solid var(--color-accent)', background: '#111', margin: 0 }}>
+                                <img src="/images/myrik/screens/searching.png" alt="Searching State" />
+                                <div style={{ position: 'absolute', bottom: '-22px', left: 0, width: '100%', textAlign: 'center', fontSize: '8px', color: 'var(--color-accent)', fontWeight: 'bold' }}>2. MATCHING</div>
+                            </div>
+                            <div className={styles.heroMockup} style={{ position: 'relative', width: '150px', height: '320px', transform: 'none', animation: 'none', border: '5px solid #1a1a1a', background: '#0a0a0a', margin: 0 }}>
                                 <img src="/images/myrik/screens/tracking.png" alt="Tracking Screen" />
+                                <div style={{ position: 'absolute', bottom: '-22px', left: 0, width: '100%', textAlign: 'center', fontSize: '8px', color: 'var(--color-text-muted)' }}>3. TRACKING</div>
                             </div>
                         </div>
                     </div>
@@ -471,18 +528,18 @@ export default function MyrikCaseStudy() {
                         <h2 className={styles.sectionTitle}>Platform Ecosystem</h2>
                     </div>
 
-                    <div className={styles.contentRow}>
-                        <div>
-                            <h3 className={styles.cardTitle}>Operational Advantages</h3>
-                            <ul className={styles.swotList}>
-                                <li><strong>Low cost</strong> — EVs drastically reduce fuel expenses</li>
-                                <li><strong>Fast delivery</strong> — Drivers already operate locally</li>
-                                <li><strong>Access</strong> — E-rickshaws navigate narrow streets</li>
-                                <li><strong>Eco-friendly</strong> — Zero local emissions</li>
-                                <li><strong>Income diversity</strong> — Drivers earn beyond rides</li>
+                    <div className={styles.flexEqual}>
+                        <div className={styles.boxCard} style={{ margin: 0, height: 'auto', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                            <h3 className={styles.boxTitle}>Operational Advantages</h3>
+                            <ul className={styles.list}>
+                                <li className={styles.listItem}><strong>Low cost</strong> — EVs drastically reduce fuel expenses</li>
+                                <li className={styles.listItem}><strong>Fast delivery</strong> — Drivers already operate locally</li>
+                                <li className={styles.listItem}><strong>Access</strong> — E-rickshaws navigate narrow streets</li>
+                                <li className={styles.listItem}><strong>Eco-friendly</strong> — Zero local emissions</li>
+                                <li className={styles.listItem}><strong>Income diversity</strong> — Drivers earn beyond rides</li>
                             </ul>
                         </div>
-                        <div className={styles.highlightCard}>
+                        <div className={styles.highlightCard} style={{ margin: 0, height: 'auto', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                             <Zap className={styles.cardIcon} size={24} />
                             <h3 className={styles.cardTitle}>Multi-Service Platform</h3>
                             <p className={styles.sectionText} style={{ marginBottom: 0 }}>
