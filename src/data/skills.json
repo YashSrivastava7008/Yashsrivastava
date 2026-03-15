@@ -1,0 +1,284 @@
+[
+    {
+        "id": 1,
+        "name": "Figma",
+        "category": "Design Tools",
+        "proficiency": "Expert"
+    },
+    {
+        "id": 2,
+        "name": "FigJam",
+        "category": "Design Tools",
+        "proficiency": "Expert"
+    },
+    {
+        "id": 3,
+        "name": "Adobe XD",
+        "category": "Design Tools",
+        "proficiency": "Advanced"
+    },
+    {
+        "id": 4,
+        "name": "Illustrator",
+        "category": "Design Tools",
+        "proficiency": "Advanced"
+    },
+    {
+        "id": 5,
+        "name": "Photoshop",
+        "category": "Design Tools",
+        "proficiency": "Advanced"
+    },
+    {
+        "id": 6,
+        "name": "After Effects",
+        "category": "Design Tools",
+        "proficiency": "Intermediate"
+    },
+    {
+        "id": 7,
+        "name": "Blender",
+        "category": "Design Tools",
+        "proficiency": "Beginner"
+    },
+    {
+        "id": 8,
+        "name": "HTML5",
+        "category": "Frontend",
+        "proficiency": "Advanced"
+    },
+    {
+        "id": 9,
+        "name": "CSS3",
+        "category": "Frontend",
+        "proficiency": "Advanced"
+    },
+    {
+        "id": 10,
+        "name": "Tailwind CSS",
+        "category": "Frontend",
+        "proficiency": "Intermediate"
+    },
+    {
+        "id": 11,
+        "name": "React (Basic)",
+        "category": "Frontend",
+        "proficiency": "Beginner"
+    },
+    {
+        "id": 12,
+        "name": "Component Handoff",
+        "category": "Frontend",
+        "proficiency": "Expert"
+    },
+    {
+        "id": 13,
+        "name": "User Interviews",
+        "category": "Product & Research",
+        "proficiency": "Expert"
+    },
+    {
+        "id": 14,
+        "name": "JTBD",
+        "category": "Product & Research",
+        "proficiency": "Advanced"
+    },
+    {
+        "id": 15,
+        "name": "Personas",
+        "category": "Product & Research",
+        "proficiency": "Advanced"
+    },
+    {
+        "id": 16,
+        "name": "Journey Maps",
+        "category": "Product & Research",
+        "proficiency": "Advanced"
+    },
+    {
+        "id": 17,
+        "name": "Heuristic Evaluation",
+        "category": "Product & Research",
+        "proficiency": "Expert"
+    },
+    {
+        "id": 18,
+        "name": "Usability Testing",
+        "category": "Product & Research",
+        "proficiency": "Expert"
+    },
+    {
+        "id": 19,
+        "name": "A/B Testing",
+        "category": "Product & Research",
+        "proficiency": "Intermediate"
+    },
+    {
+        "id": 20,
+        "name": "Wireframes",
+        "category": "UI & Interaction",
+        "proficiency": "Expert"
+    },
+    {
+        "id": 21,
+        "name": "User Flows",
+        "category": "UI & Interaction",
+        "proficiency": "Expert"
+    },
+    {
+        "id": 22,
+        "name": "Information Architecture",
+        "category": "UI & Interaction",
+        "proficiency": "Advanced"
+    },
+    {
+        "id": 23,
+        "name": "Design Systems",
+        "category": "UI & Interaction",
+        "proficiency": "Expert"
+    },
+    {
+        "id": 24,
+        "name": "Components & Variants",
+        "category": "UI & Interaction",
+        "proficiency": "Expert"
+    },
+    {
+        "id": 25,
+        "name": "Auto Layout",
+        "category": "UI & Interaction",
+        "proficiency": "Expert"
+    },
+    {
+        "id": 26,
+        "name": "8pt Grid",
+        "category": "UI & Interaction",
+        "proficiency": "Expert"
+    },
+    {
+        "id": 27,
+        "name": "Micro-interactions",
+        "category": "UI & Interaction",
+        "proficiency": "Advanced"
+    },
+    {
+        "id": 28,
+        "name": "Figma Prototypes",
+        "category": "Prototyping & Handoff",
+        "proficiency": "Expert"
+    },
+    {
+        "id": 29,
+        "name": "Dev Mode/Specs",
+        "category": "Prototyping & Handoff",
+        "proficiency": "Expert"
+    },
+    {
+        "id": 30,
+        "name": "Redlines",
+        "category": "Prototyping & Handoff",
+        "proficiency": "Advanced"
+    },
+    {
+        "id": 31,
+        "name": "Design Tokens",
+        "category": "Prototyping & Handoff",
+        "proficiency": "Advanced"
+    },
+    {
+        "id": 32,
+        "name": "Component Docs",
+        "category": "Prototyping & Handoff",
+        "proficiency": "Advanced"
+    },
+    {
+        "id": 33,
+        "name": "Lottie/Rive",
+        "category": "Prototyping & Handoff",
+        "proficiency": "Intermediate"
+    },
+    {
+        "id": 34,
+        "name": "WCAG 2.1 AA",
+        "category": "Accessibility",
+        "proficiency": "Advanced"
+    },
+    {
+        "id": 35,
+        "name": "Color Contrast",
+        "category": "Accessibility",
+        "proficiency": "Expert"
+    },
+    {
+        "id": 36,
+        "name": "Keyboard Navigation",
+        "category": "Accessibility",
+        "proficiency": "Intermediate"
+    },
+    {
+        "id": 37,
+        "name": "Focus Order",
+        "category": "Accessibility",
+        "proficiency": "Intermediate"
+    },
+    {
+        "id": 38,
+        "name": "Semantic Structure",
+        "category": "Accessibility",
+        "proficiency": "Intermediate"
+    },
+    {
+        "id": 39,
+        "name": "Screen Reader Basics",
+        "category": "Accessibility",
+        "proficiency": "Beginner"
+    },
+    {
+        "id": 40,
+        "name": "GA4",
+        "category": "Analytics & QA",
+        "proficiency": "Intermediate"
+    },
+    {
+        "id": 41,
+        "name": "Hotjar",
+        "category": "Analytics & QA",
+        "proficiency": "Intermediate"
+    },
+    {
+        "id": 42,
+        "name": "Mixpanel/Heap",
+        "category": "Analytics & QA",
+        "proficiency": "Beginner"
+    },
+    {
+        "id": 43,
+        "name": "CleverTap",
+        "category": "Analytics & QA",
+        "proficiency": "Beginner"
+    },
+    {
+        "id": 44,
+        "name": "Lighthouse",
+        "category": "Analytics & QA",
+        "proficiency": "Intermediate"
+    },
+    {
+        "id": 45,
+        "name": "axe DevTools",
+        "category": "Analytics & QA",
+        "proficiency": "Intermediate"
+    },
+    {
+        "id": 46,
+        "name": "BrowserStack",
+        "category": "Analytics & QA",
+        "proficiency": "Intermediate"
+    },
+    {
+        "id": 47,
+        "name": "Jira",
+        "category": "Analytics & QA",
+        "proficiency": "Advanced"
+    }
+]

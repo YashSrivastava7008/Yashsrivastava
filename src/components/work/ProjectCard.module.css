@@ -1,0 +1,82 @@
+.card {
+    width: 100%;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    /* Warning: Likely unused but keeping for structure intent logic if group-hover was needed */
+}
+
+.imageContainer {
+    position: relative;
+    aspect-ratio: 4/3;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    overflow: hidden;
+}
+
+.image {
+    transition: transform 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.viewBtn {
+    background: white;
+    color: black;
+    padding: 0.8rem 1.5rem;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.link:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.category {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.icon {
+    color: var(--text-primary);
+    opacity: 0;
+    transform: translate(-10px, 10px);
+    transition: all 0.3s ease;
+}
+
+.link:hover .icon {
+    opacity: 1;
+    transform: translate(0, 0);
+}

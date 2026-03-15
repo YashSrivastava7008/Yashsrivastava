@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "ADT Solution",
+    "category": "UI/UX Design",
+    "icon": "🏢",
+    "status": "Published",
+    "image": "/images/projects/adt.jpg",
+    "link": "https://www.adtsolution.com/"
+  },
+  {
+    "id": 2,
+    "title": "Myrik",
+    "category": "Mobile App",
+    "icon": "🚗",
+    "status": "Published",
+    "image": "/images/projects/myrik.png",
+    "link": ""
+  },
+  {
+    "id": 3,
+    "title": "Bhaiyaa Super App",
+    "category": "Mobile App",
+    "icon": "📦",
+    "status": "Published",
+    "image": "/images/projects/bhaiyaa.png",
+    "link": ""
+  },
+  {
+    "id": 4,
+    "title": "Futuristic Guitar",
+    "category": "Product Design",
+    "icon": "🎸",
+    "status": "Published",
+    "image": "/images/projects/guitar.png",
+    "link": "https://www.behance.net/gallery/178477625/UI-UX-and-Product-Design-of-a-futuristic-Guitar"
+  },
+  {
+    "id": 5,
+    "title": "Wearables Tech",
+    "category": "Product Design",
+    "icon": "⌚",
+    "status": "Published",
+    "image": "/images/projects/wearables.png",
+    "link": ""
+  },
+  {
+    "id": 6,
+    "title": "Dehradun Zoo",
+    "category": "Web Design",
+    "icon": "🦁",
+    "status": "Published",
+    "image": "/images/projects/zoo.png",
+    "link": "https://www.behance.net/gallery/178140831/UI-and-UX-Design-of-Dehradun-Zoo-(Malsi-Deer-Park)"
+  }
+]

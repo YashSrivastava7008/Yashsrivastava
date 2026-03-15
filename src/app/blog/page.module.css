@@ -1,0 +1,125 @@
+.main {
+    min-height: 100vh;
+    padding-top: 120px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--text-primary);
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    max-width: 600px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.card {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 3rem;
+}
+
+.card:last-child {
+    border-bottom: none;
+}
+
+.link {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    text-decoration: none;
+}
+
+.imageWrapper {
+    position: relative;
+    aspect-ratio: 16/9;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.image {
+    transition: transform 0.4s ease;
+}
+
+.link:hover .image {
+    transform: scale(1.05);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.meta {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--accent-primary);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.postTitle {
+    font-size: 1.75rem;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    transition: color 0.3s ease;
+}
+
+.link:hover .postTitle {
+    color: var(--accent-primary);
+}
+
+.excerpt {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.tags {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.tag {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+    border-radius: 100px;
+}
+
+@media (max-width: 768px) {
+    .link {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .image {
+        aspect-ratio: 2/1;
+    }
+}

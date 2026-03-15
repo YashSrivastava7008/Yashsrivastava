@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "company": "Lovely Professional University (LPU)",
+    "role": "Assistant Professor",
+    "duration": "Jan 2026 – Present",
+    "location": "Punjab, India",
+    "current": true,
+    "type": "Full-time",
+    "description": "Guiding UI/UX design and related courses to undergraduate and postgraduate students\nMentoring students on design thinking, user research, and industry best practices\nContributing to curriculum development and academic research in the field of Human-Computer Interaction\nGuiding students on patent filing and intellectual property protection for their design innovations\nMentoring students on startup creation, product ideation, and entrepreneurship in the design space"
+  },
+  {
+    "id": 2,
+    "company": "OpenDhi — Bhaiyaa (Super App)",
+    "role": "UI/UX Designer Intern",
+    "duration": "Aug 2025 – Dec 2025",
+    "location": "Hyderabad, India",
+    "current": false,
+    "type": "Full-time",
+    "description": "Created micro-animations and branded loader animation (AE → Lottie/Rive) aligned to motion guidelines\nDesigned ADT website redesign fold-by-fold, including tax calculator and tax table optimization\nAuthored research document benchmarking global payroll/EOR competitors (Multiplier, Skuad)\nApplied RICE framework for prioritization; prepared design backlogs and sprint plans\nDelivered UI refinements across Food, Mart, Events, and Services modules\nStrengthened Figma design system (tokens, components, states) and improved developer handoff"
+  },
+  {
+    "id": 3,
+    "company": "Freelancer",
+    "role": "UI/UX Designer",
+    "duration": "Aug 2024 – Present",
+    "location": "Remote (India/Global)",
+    "current": true,
+    "type": "Freelance",
+    "description": "Built social media calendar and high-impact posts for The Park Bangalore\nCreated end-to-end brand identity for Aaduri — logo, portfolio site, marketing graphics\nLed UI/UX and branding for UK-based Resole.io — site architecture, responsive wireframes\nDesigned Frutos health-tracking app — 40+ high-fidelity screens and design system"
+  },
+  {
+    "id": 4,
+    "company": "Myrik",
+    "role": "UI/UX Designer Intern",
+    "duration": "Apr 2024 – Jun 2024",
+    "location": "Mumbai, Maharashtra",
+    "current": false,
+    "type": "Internship",
+    "description": "Conducted user research, wireframing, and prototyping for accessible digital experiences\nDesigned responsive interfaces and micro-interactions for web and mobile\nPerformed usability and A/B testing; refined designs based on feedback and analytics"
+  },
+  {
+    "id": 5,
+    "company": "CollegeDekho",
+    "role": "UI/UX Designer Intern",
+    "duration": "Jan 2024 – Apr 2024",
+    "location": "Delhi",
+    "current": false,
+    "type": "Internship",
+    "description": "Designed mobile app for native Hindi speakers to improve English pronunciation\nConducted user research to tailor features for IELTS aspirants and professionals\nCreated wireframes and interactive prototypes for intuitive learning experience"
+  }
+]

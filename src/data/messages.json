@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Alice Johnson",
+        "email": "alice@example.com",
+        "subject": "Project Inquiry",
+        "message": "Hi, I'd like to discuss a new mobile app project.",
+        "date": "2026-01-06T10:00:00.000Z",
+        "read": false
+    },
+    {
+        "id": 2,
+        "name": "Bob Smith",
+        "email": "bob@example.com",
+        "subject": "Design Collaboration",
+        "message": "Are you available for a freelance UI design role?",
+        "date": "2026-01-05T14:30:00.000Z",
+        "read": true
+    }
+]

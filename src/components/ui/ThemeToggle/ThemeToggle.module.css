@@ -1,0 +1,33 @@
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--color-bg-glass);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    margin-left: 0.5rem;
+}
+
+.toggle:hover {
+    background: var(--color-bg-secondary);
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.icon {
+    position: absolute;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Light Mode specific styles override */
+[data-theme='light'] .toggle {
+    border-color: rgba(0, 0, 0, 0.1);
+}

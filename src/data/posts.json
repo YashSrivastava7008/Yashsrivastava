@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1736191200002,
+    "title": "Creating Beautiful Mobile App Interfaces",
+    "excerpt": "A comprehensive guide to designing stunning mobile app interfaces that users love, with practical tips and real-world examples.",
+    "category": "Mobile Design",
+    "date": "2025-01-06",
+    "status": "Published",
+    "icon": "📱",
+    "image": "/images/blog/mobile-design.png",
+    "readTime": "7 min read"
+  },
+  {
+    "id": 1736191200003,
+    "title": "Designing for Accessibility: A Complete Guide",
+    "excerpt": "Learn how to create inclusive digital experiences that work for everyone, including WCAG guidelines and best practices.",
+    "category": "Accessibility",
+    "date": "2025-01-05",
+    "status": "Published",
+    "icon": "♿",
+    "image": "/images/blog/accessibility.png",
+    "readTime": "8 min read"
+  },
+  {
+    "id": 1736191200004,
+    "title": "Building Scalable Design Systems",
+    "excerpt": "How to create and maintain design systems that improve team collaboration, ensure consistency, and scale with your product.",
+    "category": "Design Systems",
+    "date": "2025-01-04",
+    "status": "Published",
+    "icon": "🧩",
+    "image": "/images/blog/design-systems.png",
+    "readTime": "6 min read"
+  },
+  {
+    "id": 1736191200005,
+    "title": "The Art of User Research",
+    "excerpt": "Master the essential UX research methods - from user interviews to journey mapping - that lead to better product decisions.",
+    "category": "UX Research",
+    "date": "2025-01-03",
+    "status": "Published",
+    "icon": "🔍",
+    "image": "/images/blog/user-research.png",
+    "readTime": "6 min read"
+  }
+]
