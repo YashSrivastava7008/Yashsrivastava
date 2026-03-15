@@ -704,7 +704,8 @@
 /* ========== MEDIA / VIDEO ========== */
 .mediaPlaceholder {
     width: 100%;
-    min-height: 400px;
+    max-height: 400px;
+    height: 100%;
     background: var(--color-bg-glass);
     border: 1px dashed var(--color-border, rgba(255,255,255,0.1));
     border-radius: var(--radius-2xl);

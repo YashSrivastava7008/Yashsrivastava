@@ -466,7 +466,7 @@ export default function BhaiyaaCaseStudy() {
                                 <li className={styles.listItem}>Used across splash screens and loading states to keep users engaged.</li>
                             </ul>
                         </div>
-                        <div className={styles.mediaPlaceholder} style={{ minHeight: '200px', borderStyle: 'solid', padding: 0 }}>
+                        <div className={styles.mediaPlaceholder} style={{ borderStyle: 'solid', padding: 0 }}>
                             <video
                                 src="/images/bhaiyaa/logo_animation.mp4"
                                 autoPlay
