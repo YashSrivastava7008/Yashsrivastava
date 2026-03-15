@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import {
     Smartphone, MapPin, Map, Home, Phone, Lock, User, PartyPopper,
     Search, ShoppingCart, AlertTriangle, CheckCircle2, ArrowDown,
-    TrendingUp, Users, Palette, Type, Layers, Zap, BarChart3
+    TrendingUp, Users, Palette, Type, Layers, Zap, BarChart3,
+    HeartPulse, UtensilsCrossed, CalendarHeart
 } from 'lucide-react';
 import styles from "./BhaiyaaCaseStudy.module.css";
 
@@ -141,7 +142,125 @@ export default function BhaiyaaCaseStudy() {
                     </div>
                 </section>
 
-                {/* ===== 04. THE NEW EXPERIENCE ===== */}
+                {/* ===== 04. BHAIYAA APP FEATURES ===== */}
+                <section className={styles.section}>
+                    <div className={styles.sectionHeader}>
+                        <span className={styles.sectionBadge}>Features</span>
+                        <h2 className={styles.sectionTitle}>Bhaiyaa App Features</h2>
+                        <p className={styles.sectionText}>
+                            A unified hyperlocal ecosystem connecting users with nearby services, local commerce, and community experiences.
+                        </p>
+                    </div>
+
+                    {/* Top Row — 3 cards */}
+                    <div className={styles.featureGrid}>
+                        {/* Community */}
+                        <div className={styles.featureCard}>
+                            <div className={styles.featureIconWrap}>
+                                <Users size={24} color="var(--color-accent)" />
+                            </div>
+                            <h3 className={styles.featureTitle}>Community</h3>
+                            <p className={styles.featureDesc}>
+                                Connect with your neighbourhood and stay updated with local activities and discussions.
+                            </p>
+                            <ul className={styles.featureCapList}>
+                                <li className={styles.featureCapItem}>Local groups and discussions</li>
+                                <li className={styles.featureCapItem}>Neighbourhood updates</li>
+                                <li className={styles.featureCapItem}>Community announcements</li>
+                                <li className={styles.featureCapItem}>Social engagement</li>
+                            </ul>
+                        </div>
+
+                        {/* Health */}
+                        <div className={styles.featureCard}>
+                            <div className={styles.featureIconWrap}>
+                                <HeartPulse size={24} color="var(--color-accent)" />
+                            </div>
+                            <h3 className={styles.featureTitle}>Health</h3>
+                            <p className={styles.featureDesc}>
+                                Discover nearby healthcare services and access essential wellness resources.
+                            </p>
+                            <ul className={styles.featureCapList}>
+                                <li className={styles.featureCapItem}>Clinic discovery</li>
+                                <li className={styles.featureCapItem}>Doctor appointment booking</li>
+                                <li className={styles.featureCapItem}>Pharmacy access</li>
+                                <li className={styles.featureCapItem}>Health service information</li>
+                            </ul>
+                        </div>
+
+                        {/* Mart */}
+                        <div className={styles.featureCard}>
+                            <div className={styles.featureIconWrap}>
+                                <ShoppingCart size={24} color="var(--color-accent)" />
+                            </div>
+                            <h3 className={styles.featureTitle}>Bhaiyaa Mart</h3>
+                            <p className={styles.featureDesc}>
+                                Order groceries and daily essentials from nearby local vendors.
+                            </p>
+                            <ul className={styles.featureCapList}>
+                                <li className={styles.featureCapItem}>Grocery shopping</li>
+                                <li className={styles.featureCapItem}>Nearby vendor listings</li>
+                                <li className={styles.featureCapItem}>Fast local delivery</li>
+                                <li className={styles.featureCapItem}>Real-time product availability</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Bottom Row — 2 cards */}
+                    <div className={styles.featureGridBottom}>
+                        {/* Food */}
+                        <div className={styles.featureCard}>
+                            <div className={styles.featureIconWrap}>
+                                <UtensilsCrossed size={24} color="var(--color-accent)" />
+                            </div>
+                            <h3 className={styles.featureTitle}>Food</h3>
+                            <p className={styles.featureDesc}>
+                                Explore local restaurants and order meals directly from nearby food vendors.
+                            </p>
+                            <ul className={styles.featureCapList}>
+                                <li className={styles.featureCapItem}>Restaurant discovery</li>
+                                <li className={styles.featureCapItem}>Food delivery</li>
+                                <li className={styles.featureCapItem}>Order tracking</li>
+                                <li className={styles.featureCapItem}>Local cuisine exploration</li>
+                            </ul>
+                        </div>
+
+                        {/* Events */}
+                        <div className={styles.featureCard}>
+                            <div className={styles.featureIconWrap}>
+                                <CalendarHeart size={24} color="var(--color-accent)" />
+                            </div>
+                            <h3 className={styles.featureTitle}>Events</h3>
+                            <p className={styles.featureDesc}>
+                                Discover events and activities happening in your neighbourhood.
+                            </p>
+                            <ul className={styles.featureCapList}>
+                                <li className={styles.featureCapItem}>Local meetups</li>
+                                <li className={styles.featureCapItem}>Community gatherings</li>
+                                <li className={styles.featureCapItem}>Cultural programs</li>
+                                <li className={styles.featureCapItem}>Event discovery</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Ecosystem Diagram */}
+                    <div className={styles.ecosystemDiagram}>
+                        <p className={styles.ecosystemTitle}>Unified Hyperlocal Ecosystem</p>
+                        <div className={styles.ecosystemVisual}>
+                            <div className={styles.ecosystemPlatform}>Bhaiyaa Platform</div>
+                            <div className={styles.ecosystemConnector} />
+                            <div className={styles.ecosystemNodes}>
+                                <span className={styles.ecosystemNode}>🏘️ Community</span>
+                                <span className={styles.ecosystemNode}>💊 Health</span>
+                                <span className={styles.ecosystemNode}>🛒 Mart</span>
+                                <span className={styles.ecosystemNode}>🍕 Food</span>
+                                <span className={styles.ecosystemNode}>🎉 Events</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* ===== 05. THE NEW EXPERIENCE ===== */}
                 <section className={styles.section}>
                     <div className={styles.sectionHeader}>
                         <span className={styles.sectionBadge}>Product</span>
