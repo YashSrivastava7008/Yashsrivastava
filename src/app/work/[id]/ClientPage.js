@@ -9,8 +9,24 @@ import Link from "next/link";
 import projectsData from "../../../data/projects.json";
 import BhaiyaaCaseStudy from "../../../components/work/BhaiyaaCaseStudy";
 import MyrikCaseStudy from "../../../components/work/MyrikCaseStudy";
+import ADTCaseStudy from "../../../components/work/ADTCaseStudy";
 
 export default function ProjectPage({ id }) {
+    // Check if it's the ADT Solution
+    if (id === '1') {
+        return (
+            <main className={styles.main}>
+                <div style={{ padding: '20px 5%', maxWidth: '1200px', margin: '0 auto', paddingTop: '100px' }}>
+                    <Link href="/work" className={styles.backLink}>
+                        <ArrowLeft size={20} /> Back to Work
+                    </Link>
+                </div>
+                <ADTCaseStudy />
+                <ContactCTA />
+            </main>
+        );
+    }
+
     // Check if it's the Bhaiyaa Super App
     if (id === '3') {
         return (

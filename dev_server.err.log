@@ -1,0 +1,6 @@
+⚠ Port 3000 is in use by process 11804, using available port 3001 instead.
+⚠ `eslint` configuration in next.config.mjs is no longer supported. See more info here: https://nextjs.org/docs/app/api-reference/cli/next#next-lint-options
+⚠ Invalid next.config.mjs options detected: 
+⚠     Unrecognized key(s) in object: 'eslint'
+⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+⨯ Unable to acquire lock at D:\My portfolio website\.next\dev\lock, is another instance of next dev running?
