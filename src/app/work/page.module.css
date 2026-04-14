@@ -1,15 +1,42 @@
 .main {
     min-height: 100vh;
     padding-top: 120px;
+    position: relative;
+    overflow: hidden;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
+    position: relative;
 }
 
+/* Background Decorations */
+.bgGlow1 {
+    position: fixed;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(108, 140, 255, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.bgGlow2 {
+    position: fixed;
+    bottom: -200px;
+    left: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(0, 229, 168, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Header */
 .header {
     text-align: center;
     margin-bottom: 4rem;
@@ -17,66 +44,309 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.label {
+    font-size: var(--font-size-sm);
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 500;
 }
 
 .title {
     font-size: clamp(2.5rem, 5vw, 4rem);
-    color: var(--text-primary);
+    color: var(--color-text-primary);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
 }
 
 .subtitle {
-    color: var(--text-secondary);
+    color: var(--color-text-secondary);
     font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 520px;
+    line-height: 1.7;
 }
 
-.filters {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-bottom: 4rem;
-    flex-wrap: wrap;
-}
-
-.filterBtn {
+/* Cards Container - Horizontal Grid */
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     position: relative;
-    padding: 0.6rem 1.2rem;
-    background: transparent;
-    border: none;
-    font-size: 0.95rem;
-    color: var(--text-secondary);
-    cursor: pointer;
-    border-radius: 100px;
-    transition: color 0.3s ease;
     z-index: 1;
 }
 
-.filterBtn:hover {
-    color: var(--text-primary);
+.cardWrapper {
+    width: 100%;
 }
 
-.filterBtn.active {
-    color: var(--bg-primary);
-    font-weight: 500;
+.cardLink {
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
-.activeBackground {
+/* Card */
+.card {
+    position: relative;
+    padding: 2rem 2.5rem;
+    border-radius: var(--radius-2xl);
+    background: var(--color-bg-card);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid var(--color-border);
+    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: var(--card-color);
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.3),
+        0 0 40px var(--card-glow);
+}
+
+/* Card Glow - appears on hover */
+.cardGlow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--card-gradient);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card:hover .cardGlow {
+    opacity: 1;
+}
+
+/* Card Border Gradient */
+.cardBorder {
     position: absolute;
     inset: 0;
-    background: var(--text-primary);
-    border-radius: 100px;
-    z-index: -1;
+    border-radius: var(--radius-2xl);
+    padding: 1px;
+    background: var(--card-gradient);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 3rem;
+.card:hover .cardBorder {
+    opacity: 0.5;
+}
+
+/* Card Top */
+.cardTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.iconWrapper {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-xl);
+    background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--card-color);
+    transition: all 0.4s ease;
+}
+
+.card:hover .iconWrapper {
+    background: var(--card-gradient);
+    color: var(--color-bg-primary);
+    border-color: transparent;
+    box-shadow: 0 8px 24px var(--card-glow);
+}
+
+.projectCount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+}
+
+.countNumber {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--card-color);
+    line-height: 1;
+}
+
+.countLabel {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Card Content */
+.cardContent {
+    margin-bottom: 1.5rem;
+}
+
+.cardSubtitle {
+    font-size: var(--font-size-xs);
+    color: var(--card-color);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.cardTitle {
+    font-size: clamp(1.5rem, 3vw, 1.8rem);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
+    transition: color 0.3s ease;
+}
+
+.card:hover .cardTitle {
+    color: var(--card-color);
+}
+
+.cardDescription {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: 100%;
+}
+
+/* Tags */
+.cardTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    padding: 0.35rem 0.85rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+    transition: all 0.3s ease;
+}
+
+.card:hover .tag {
+    border-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-text-secondary);
+}
+
+/* CTA */
+.cardCta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.ctaText {
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-text-muted);
+    transition: color 0.3s ease;
+}
+
+.card:hover .ctaText {
+    color: var(--card-color);
+}
+
+.ctaArrow {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--color-text-muted);
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card:hover .ctaArrow {
+    background: var(--card-gradient);
+    color: var(--color-bg-primary);
+    transform: translateX(4px);
+    box-shadow: 0 4px 16px var(--card-glow);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .cardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
-    .grid {
+    .main {
+        padding-top: 100px;
+    }
+
+    .container {
+        margin-bottom: 3rem;
+    }
+
+    .header {
+        margin-bottom: 3rem;
+    }
+
+    .card {
+        padding: 1.5rem 1.75rem;
+    }
+
+    .cardDescription {
+        font-size: var(--font-size-sm);
+    }
+
+    .cardsContainer {
         grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 1.25rem 1.25rem;
+    }
+
+    .iconWrapper {
+        width: 48px;
+        height: 48px;
+    }
+
+    .countNumber {
+        font-size: 1.25rem;
+    }
+
+    .cardTags {
+        gap: 0.4rem;
+    }
+
+    .tag {
+        padding: 0.25rem 0.65rem;
+        font-size: 0.65rem;
     }
 }

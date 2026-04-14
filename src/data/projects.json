@@ -27,6 +27,15 @@
     "link": ""
   },
   {
+    "id": 7,
+    "title": "WORQ",
+    "category": "Mobile App",
+    "icon": "📱",
+    "status": "Published",
+    "image": "/images/worq/Feed_or_Landing_screen.jpeg",
+    "link": ""
+  },
+  {
     "id": 4,
     "title": "Futuristic Guitar",
     "category": "Product Design",
